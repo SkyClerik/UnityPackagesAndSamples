@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a40226a88725d740b3e6b4aaeac7906, type: 3}
+  m_Name: ObjectsCollectionData
+  m_EditorClassIdentifier: 
+  _applicationDescription: "\u0422\u0443\u0442 \u043E\u043F\u0438\u0441\u0430\u043D\u0438\u0435"
+  _iconCollection: {fileID: 2800000, guid: 32e715828bef2294fb535756347859fb, type: 3}
+  _iconSelectRoot: {fileID: 2800000, guid: 82a9e19747a9f8b47abe7104de72ac8b, type: 3}
+  _iconMerge: {fileID: 2800000, guid: 7f8e0c7b5fb37c545b0825fbcb3a576b, type: 3}
+  _iconClearParent: {fileID: 2800000, guid: 270401a256046d44eacc2eb22dd66d13, type: 3}
+  _iconRotate: {fileID: 2800000, guid: 70b49ef80261cf443b88d317b7fa3900, type: 3}
+  _iconRoundItUp: {fileID: 2800000, guid: 5d946e029d3b5e04184a70aa26c8d43c, type: 3}
+  _iconGreed: {fileID: 2800000, guid: 88f569d038cbf6f4487510777b80df76, type: 3}
+  _rotateAnge: 45
+  _roundStep: 1
+  _gridOffset: {x: 3, y: 3}
+  _gridStack: 10
