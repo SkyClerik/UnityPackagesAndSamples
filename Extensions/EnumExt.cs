@@ -1,3 +1,4 @@
+using System;
 using System.Linq;
 
 namespace UnityEngine.Toolbox
@@ -32,6 +33,30 @@ namespace UnityEngine.Toolbox
         public static bool In<T>(this T value, params T[] array)
         {
             return array.Contains(value);
+        }
+
+        /// <summary>
+        /// Преобразует перечисляемое значение, у которого внутренний тип — byte, в byte.
+        /// Используется только если базовый тип enum — byte (например, enum : byte).
+        /// </summary>
+        /// <typeparam name="T">Тип перечисления, обязательно : struct, Enum</typeparam>
+        /// <param name="value">Значение перечисления</param>
+        /// <returns>Значение перечисления как байт</returns>
+        public static byte ToByte<T>(this T value) where T : struct, Enum
+        {
+            return (byte)(object)value;
+        }
+
+        /// <summary>
+        /// Преобразует значение перечисления в его базовое целочисленное представление (int).
+        /// Подходит для любых enum-типов, независимо от базового типа (byte, int и т.п.).
+        /// </summary>
+        /// <typeparam name="T">Тип перечисления, обязательно : struct, Enum</typeparam>
+        /// <param name="value">Значение перечисления</param>
+        /// <returns>Целочисленное значение enum</returns>
+        public static int ToInt<T>(this T value) where T : struct, Enum
+        {
+            return (int)(object)value;
         }
     }
 }
